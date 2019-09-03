@@ -4,8 +4,8 @@ public class Main {
         String palabra1 = "PABLOPABLITOCLAVOUNCLAVITO";
         String palabra2 = "COMOQUIERESQUETEQUIERASIQUIENQUIEROQUEMEQUIERANOMEQUIERECOMOQUIEROQUEMEQUIERA";
 
-        int a = cuentapalabra(palabra1);
-        int b = cuentapalabra(palabra2);
+        int a = palabra1.length();
+        int b = palabra2.length();
         System.out.println("La cantidad de caracteres de la palabra es " + a);
         System.out.println("La cantidad de caracteres de la palabra es " + b);
 
@@ -15,18 +15,9 @@ public class Main {
 
     }
 
-    public static int cuentapalabra(String palabra)
-    {
-        char[] caracteres = palabra.toCharArray();
-        int contador = 0;
-        for (int i = 0; i < caracteres.length; i++) {
-            contador++;
-        }
 
-        return contador;
-    }
 
-    public  static void cuentaCaracter(String palabra, int total)
+    private  static void cuentaCaracter(String palabra, int total)
     {
         char[] caracteres = palabra.toCharArray();
         for(int i=0; i<caracteres.length; i++){
