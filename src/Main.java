@@ -15,8 +15,6 @@ public class Main {
 
     }
 
-
-
     private  static void cuentaCaracter(String palabra, int total)
     {
         char[] caracteres = palabra.toCharArray();
